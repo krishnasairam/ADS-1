@@ -74,7 +74,7 @@ class WeightedQuickUnion {
 	public int find(int p) {
 		validate(p);
 		while (p != parent[p]) {
-			p = parent[p];
+			p = parent[parent[p]];
 		} return p;
 	}
 	private void validate(int p) {
