@@ -1,1 +1,1 @@
-Weighted Quick-Union Path Compression
+Weighted Quick-Union Path Compression is best method as it takes very less time. As the complexity of the program is very less when compared to quick union and quick path.It also takes very less time.

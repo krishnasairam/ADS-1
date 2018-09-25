@@ -1,1 +1,5 @@
-2, 3, 6 are not possibly occur during the execution of weighted quick union with path compression.
+2, 3, 5, 6 are not possibly occur during the execution of weighted quick union with path compression.
+2 is not possible because it is not adding tree with small weight to the tree with large weight.
+3 is also not possible for same reason.
+5 is not possible beacause its forming a loop in tree, which is not possible.
+6 is also not possible as it is also forming a loop in tree.
