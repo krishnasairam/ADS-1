@@ -28,7 +28,7 @@ class Sorted_Array {
 		for (int i: pairs) {
 			s += i +",";
 		}
-		s.substring(0, s.length() - 2);
+		s = s.substring(0, s.length() - 2);
 		System.out.println(s);
 	}
 }
