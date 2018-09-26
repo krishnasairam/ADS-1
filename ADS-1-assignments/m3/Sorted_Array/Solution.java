@@ -36,7 +36,7 @@ class Sortedarray {
     public void sort() {
         List lis = Arrays.asList(pairs);
         int temp;
-        for (int i = 1 ; i < pairs.length ;) {
+        for (int i = 1; i < pairs.length; ) {
             if (pairs[1] < pairs[0]) {
                 temp = pairs[i];
                 pairs[i] = pairs[i - 1];
