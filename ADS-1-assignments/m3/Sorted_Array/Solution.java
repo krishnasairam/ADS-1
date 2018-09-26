@@ -1,6 +1,5 @@
 import java.util.Scanner;
 import java.util.Arrays;
-import java.util.List;
 /**
  * Sortedarray.
  */
@@ -34,7 +33,6 @@ class Sortedarray {
      * sort.
      */
     public void sort() {
-        List lis = Arrays.asList(pairs);
         int temp;
         int i = 1;
         while (i < pairs.length) {
@@ -52,12 +50,14 @@ class Sortedarray {
                 i++;
             }
         }
-        String s = "";
+        String s = (pairs.toString().replace("[","")).replace("]","");
+        System.out.println(s);
+        /**String s = "";
         for (int j : pairs) {
             s += j + ",";
         }
         s = s.substring(0, s.length() - 1);
-        System.out.println(s);
+        System.out.println(s);*/
     }
 }
 /**
