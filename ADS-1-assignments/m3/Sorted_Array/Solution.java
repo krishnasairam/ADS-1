@@ -36,7 +36,8 @@ class Sortedarray {
     public void sort() {
         List lis = Arrays.asList(pairs);
         int temp;
-        for (int i = 1; i < pairs.length; ) {
+        int i = 1;
+        while (i < pairs.length) {
             if (pairs[1] < pairs[0]) {
                 temp = pairs[i];
                 pairs[i] = pairs[i - 1];
@@ -52,8 +53,8 @@ class Sortedarray {
             }
         }
         String s = "";
-        for (int i : pairs) {
-            s += i + ",";
+        for (int j : pairs) {
+            s += j + ",";
         }
         s = s.substring(0, s.length() - 1);
         System.out.println(s);
