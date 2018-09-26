@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 /**
- * Sortedarray
+ * Sortedarray.
  */
 class Sortedarray{
     /**
@@ -17,7 +17,7 @@ class Sortedarray{
      *
      * @param      n     { parameter_description }
      */
-    public Sortedarray (final int n) {
+    Sortedarray(final int n) {
         size = 0;
         pairs = new int[n];
     }
