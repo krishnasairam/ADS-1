@@ -25,10 +25,10 @@ class Sorted_Array {
 	public void sort() {
 		Arrays.sort(pairs);
 		String s = "";
-		for (int i: pairs) {
-			s += i +",";
+		for (int i : pairs) {
+			s += i + ",";
 		}
-		s = s.substring(0, s.length() - 2);
+		s = s.substring(0, s.length() - 1);
 		System.out.println(s);
 	}
 }
@@ -46,19 +46,18 @@ public final class Solution {
 	 */
 	public static void main(final String[] args) {
 		Scanner scan = new Scanner(
-			System.in);
+		    System.in);
 		int n = scan.nextInt();
 		int m = scan.nextInt();
 		String[] list1;
 		String[] list2;
 		Sorted_Array p = new Sorted_Array(m + n);
 		scan.nextLine();
-		list1 = scan.nextLine().split(",");
-		for (String i : list1) {
-			p.add(Integer.parseInt(i));
-		}
-		if (n == 0) {
-			scan.nextLine();
+		if (n != 0) {
+			list1 = scan.nextLine().split(",");
+			for (String i : list1) {
+				p.add(Integer.parseInt(i));
+			}
 		}
 		list2 = scan.nextLine().split(",");
 		for (String j : list2) {
