@@ -13,9 +13,11 @@ class Sortedarray{
      */
     private int size;
     /**
-    * Constructs the object.
-    */
-    public Sortedarray(final int n) {
+     * Constructs the object.
+     *
+     * @param      n     { parameter_description }
+     */
+    public Sortedarray (final int n) {
         size = 0;
         pairs = new int[n];
     }
