@@ -28,7 +28,7 @@ class Sorted_Array {
 		for (int i: pairs) {
 			s += i +",";
 		}
-		s.substring(0, s.length() - 1);
+		s.substring(0, s.length() - 2);
 		System.out.println(s);
 	}
 }
@@ -56,6 +56,9 @@ public final class Solution {
 		list1 = scan.nextLine().split(",");
 		for (String i : list1) {
 			p.add(Integer.parseInt(i));
+		}
+		if (n == 0) {
+			scan.nextLine();
 		}
 		list2 = scan.nextLine().split(",");
 		for (String j : list2) {
