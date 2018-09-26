@@ -50,7 +50,7 @@ class Sortedarray {
                 i++;
             }
         }
-        String s = (pairs.toString().replace("[","")).replace("]","");
+        String s = (Arrays.toString(pairs).replace("[","")).replace("]","");
         System.out.println(s);
         /**String s = "";
         for (int j : pairs) {
