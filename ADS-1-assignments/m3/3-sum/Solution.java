@@ -1,5 +1,8 @@
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * Class for threesum.
+ */
 class Threesum {
     /**
     * pairs array used to store inputs.
@@ -12,14 +15,22 @@ class Threesum {
     /**
      * used to calculate the total pairs.
      */
-    Threesum(int n) {
+    Threesum(final int n) {
         size = 0;
         pairs = new int[n];
     }
-    public void add(int x) {
+    /**
+     * add.
+     *
+     * @param      x     { parameter_description }
+     */
+    protected void add(final int x) {
         pairs[size++] = x;
     }
-    public void threesum() {
+    /**
+     * threesum.
+     */
+    protected void threesum() {
         Arrays.sort(pairs);
         int j,k;
         int count = 0;
