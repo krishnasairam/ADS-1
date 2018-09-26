@@ -1,9 +1,10 @@
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.List;
 /**
  * Sortedarray.
  */
-class Sortedarray{
+class Sortedarray {
     /**
      * pairs array.
      */
@@ -33,13 +34,23 @@ class Sortedarray{
      * sort.
      */
     public void sort() {
-        Arrays.sort(pairs);
-        String s = "";
-        for (int i : pairs) {
-            s += i + ",";
+        List lis = Arrays.asList(pairs);
+        int temp;
+        for (int i = 1 ; i < pairs.length ;) {
+            if (pairs[1] < pairs[0]) {
+                temp = pairs[i];
+                pairs[i] = pairs[i - 1];
+                pairs[i - 1] = temp;
+            }
+            if (pairs[i] < pairs[i - 1]) {
+                temp = pairs[i];
+                pairs[i] = pairs[i - 1];
+                pairs[i - 1] = temp;
+                i--;
+            } else {
+                i++;
+            }
         }
-        s = s.substring(0, s.length() - 1);
-        System.out.println(s);
     }
 }
 /**
