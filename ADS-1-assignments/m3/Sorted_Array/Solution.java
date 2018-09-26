@@ -58,10 +58,11 @@ public final class Solution {
 			for (String i : list1) {
 				p.add(Integer.parseInt(i));
 			}
+		} else {
+			scan.nextLine();
 		}
 		list2 = scan.nextLine().split(",");
 		for (String j : list2) {
-
 			p.add(Integer.parseInt(j));
 		}
 		p.sort();
