@@ -7,21 +7,29 @@ class Sorted_Array {
 	/**
 	 * pairs array.
 	 */
-	int[] pairs;
+	private int[] pairs;
 	/**
 	 * size of array.
 	 */
-	int size;
+	private int size;
 	/**
 	* Constructs the object.
 	*/
-	public Sorted_Array(int n) {
+	public Sorted_Array(final int n) {
 		size = 0;
 		pairs = new int[n];
 	}
-	public void add(int x) {
+	/**
+	 * add.
+	 *
+	 * @param      x     { parameter_description }
+	 */
+	public void add(final int x) {
 		pairs[size++] = x;
 	}
+	/**
+	 * sort.
+	 */
 	public void sort() {
 		Arrays.sort(pairs);
 		String s = "";
@@ -32,6 +40,9 @@ class Sorted_Array {
 		System.out.println(s);
 	}
 }
+/**
+ * solution class.
+ */
 public final class Solution {
 	/**
 	* Constructs the object.
