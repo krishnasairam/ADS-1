@@ -7,11 +7,11 @@ class Threesum {
     /**
     * pairs array used to store inputs.
     */
-    int[] pairs;
+    private int[] pairs;
     /**
      * store number elements added.
      */
-    int size;
+    private int size;
     /**
      * Constructs the object.
      *
@@ -26,13 +26,13 @@ class Threesum {
      *
      * @param      x     { parameter_description }
      */
-    void add(final int x) {
+    public void add(final int x) {
         pairs[size++] = x;
     }
     /**
      * threesum.
      */
-    void threesum() {
+    public void threesum() {
         Arrays.sort(pairs);
         int j, k;
         int count = 0;
@@ -80,3 +80,4 @@ public final class Solution {
         p.threesum();
     }
 }
+
