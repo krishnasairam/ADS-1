@@ -13,7 +13,9 @@ class Threesum {
      */
     int size;
     /**
-     * used to calculate the total pairs.
+     * Constructs the object.
+     *
+     * @param      n     { parameter_description }
      */
     Threesum(final int n) {
         size = 0;
@@ -24,15 +26,15 @@ class Threesum {
      *
      * @param      x     { parameter_description }
      */
-    protected void add(final int x) {
+    void add(final int x) {
         pairs[size++] = x;
     }
     /**
      * threesum.
      */
-    protected void threesum() {
+    void threesum() {
         Arrays.sort(pairs);
-        int j,k;
+        int j, k;
         int count = 0;
         for (int i = 0; i < size - 2; i++) {
             j = i + 1;
