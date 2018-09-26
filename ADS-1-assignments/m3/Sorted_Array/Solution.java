@@ -51,6 +51,12 @@ class Sortedarray {
                 i++;
             }
         }
+        String s = "";
+        for (int i : pairs) {
+            s += i + ",";
+        }
+        s = s.substring(0, s.length() - 1);
+        System.out.println(s);
     }
 }
 /**
