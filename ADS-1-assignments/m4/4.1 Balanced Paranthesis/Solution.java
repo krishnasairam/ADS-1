@@ -30,9 +30,9 @@ public final class Solution {
                 //str += token;
                 if (tokens.length % 2 == 0) {
                     //System.out.println(token);
-                    if ("{".equals(token) || "[".equals(token) || "(".equals(token)) {
-                        s.
-                        push(token);
+                    if ("{".equals(token) || "[".
+                        equals(token) || "(".equals(token)) {
+                        s.push(token);
                         temp++;
                     } else {
                         if (temp == 0) {
