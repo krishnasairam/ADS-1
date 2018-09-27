@@ -40,5 +40,6 @@ public final class Solution {
 			}
 			s.push(result);
 		}
+		System.out.println(s.pop());
 	}
 }
