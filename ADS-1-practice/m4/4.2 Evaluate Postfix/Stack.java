@@ -4,22 +4,29 @@ public class Stack {
 	private int pointer;
 	public Stack() {
 		myStack = new int[10];
-		pointer = -1;
+		pointer = 0;
 	}
 	public int pop() {
-		if (pointer == -1) {
+		if (pointer == 0) {
 			System.out.println("No items to pop");
 		}
-		return myStack[pointer--];
+		return myStack[--pointer];
 	}
 	public void push(int num) {
 		if (pointer == myStack.length - 1) {
 			resize();
 		} else {
-			myStack[++pointer] = num;
+			myStack[pointer++] = num;
 		}
 	}
 	public void resize() {
 		myStack = Arrays.copyOf(myStack, pointer * 2);
+	}
+	public void print() {
+		String s = "";
+		for(int i : myStack) {
+			s += i +",";
+		}
+		System.out.println(s);
 	}
 }

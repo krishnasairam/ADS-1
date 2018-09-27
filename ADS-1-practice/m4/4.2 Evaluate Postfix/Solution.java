@@ -17,29 +17,31 @@ public final class Solution {
 		String[] tokens = scan.nextLine().split(" ");
 		Stack s = new Stack();
 		int number1;
-        int number2;
-        int result=0;
+		int number2;
+		int result = 0;
 		for (int j = 0; j < tokens.length; j++) {
 			String token = tokens[j];
 			if (!"+".equals(token) && !"*".equals(token) && !"-".equals(token) && !"/".equals(token)) {
 				s.push(Integer.parseInt(token));
-
-			}   else {
+			} else {
 				String Operator = tokens[j];
 				number1 = s.pop();
 				number2 = s.pop();
 				if (Operator.equals("/")) {
 					result = number1 / number2;
+					s.push(result);
 				} else if (Operator.equals("*")) {
 					result = number1 * number2;
+					s.push(result);
 				} else if (Operator.equals("+")) {
 					result = number1 + number2;
+					s.push(result);
 				} else if (Operator.equals("-")) {
 					result = number1 - number2;
+					s.push(result);
 				} else System.out.println("Illeagal symbol");
 			}
-			s.push(result);
-			s.pop();
+			s.print();
 		}
 		System.out.println(result);
 	}
