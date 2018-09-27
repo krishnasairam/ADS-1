@@ -41,7 +41,6 @@ public final class Solution {
 					s.push(result);
 				} else System.out.println("Illeagal symbol");
 			}
-			s.print();
 		}
 		System.out.println(result);
 	}

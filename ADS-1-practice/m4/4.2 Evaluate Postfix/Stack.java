@@ -22,11 +22,4 @@ public class Stack {
 	public void resize() {
 		myStack = Arrays.copyOf(myStack, pointer * 2);
 	}
-	public void print() {
-		String s = "";
-		for(int i : myStack) {
-			s += i +",";
-		}
-		System.out.println(s);
-	}
 }
