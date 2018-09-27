@@ -2192,3 +2192,99 @@ NO
 NO
 YES
 YES
+
+Your Output: 
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+No items to pop
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Stack.pop(Stack.java:13)
+	at Solution.main(Solution.java:38)
+
+----------------------------------------
+########## Testcase 3: Passed ##########
+Expected Output: 
+NO
+YES
+YES
+YES
+NO
+
+Your Output: 
+NO
+YES
+YES
+YES
+NO
+
+----------------------------------------
+Result: 1/4 testcases passed.
+Starting audit...
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m4\4.1 Balanced Paranthesis\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m4\4.1 Balanced Paranthesis\Solution.java:30: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m4\4.1 Balanced Paranthesis\Solution.java:32:29: '++' is preceded with whitespace. [NoWhitespaceBefore]
+Audit done.
+Checkstyle ends with 3 errors.
+
+
+[master 5a96427] "check_style_score -> 1 of 4 passed. style score: 0/1 "
+ 1 file changed, 2194 insertions(+)
+ create mode 100644 ADS-1-assignments/m4/4.1 Balanced Paranthesis/o.txt
+
+

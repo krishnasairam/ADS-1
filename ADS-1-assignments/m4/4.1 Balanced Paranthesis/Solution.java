@@ -25,8 +25,11 @@ public final class Solution {
             int temp = 0;
             String st = "";
             Stack s = new Stack();
+            String str = "";
             for (String token : tokens) {
+                str += token;
                 if (tokens.length % 2 == 0) {
+                    //System.out.println(token);
                     if ("{".equals(token) || "[".equals(token) || "(".equals(token)) {
                         s.push(token);
                         temp ++;
@@ -36,19 +39,20 @@ public final class Solution {
                             break;
                         } else {
                             st = s.pop();
-                            if (st.equals("{") && token.equals("}")) {
+                            // str += st;
+                            System.out.println(st+ ":" + token );
+                            if ((st.equals("{") && token.equals("}")) || (st.equals("(") && token.equals(")")) || (st.equals("[") && token.equals("]"))) {
                                 count++;
-                            } else if (st.equals("(") && token.equals(")")) {
-                                count++;
-                            } else if (st.equals("[") && token.equals("]")) {
-                                count++;
+                                temp--;
                             } else {
+                                s.print();
                                 System.out.println("NO");
                                 break;
                             }
                         }
                     }
                 } else {
+                    s.print();
                     System.out.println("NO");
                     break;
                 }

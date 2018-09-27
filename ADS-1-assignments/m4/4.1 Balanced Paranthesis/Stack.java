@@ -6,7 +6,11 @@ public class Stack {
 		myStack = new String[10];
 		pointer = 0;
 	}
+	public void print(){
+		System.out.println(Arrays.toString(myStack));
+	}
 	public String pop() {
+		System.out.println("pop called");
 		if (pointer == 0) {
 			System.out.println("No items to pop");
 		}
@@ -15,11 +19,11 @@ public class Stack {
 	public void push(String num) {
 		if (pointer == myStack.length - 1) {
 			resize();
-		} else {
-			myStack[pointer++] = num;
 		}
+		myStack[pointer++] = num;
+
 	}
 	public void resize() {
-		myStack = Arrays.copyOf(myStack, pointer * 2);
+		myStack = Arrays.copyOf(myStack, myStack.length * 2);
 	}
 }
