@@ -22,24 +22,30 @@ public final class Solution {
         while (n != 0) {
             String[] tokens = scan.nextLine().split("");
             int count = 0;
+            int temp = 0;
             String st = "";
             Stack s = new Stack();
-            System.out.println(Arrays.toString(tokens));
             for (String token : tokens) {
                 if (tokens.length % 2 == 0) {
                     if ("{".equals(token) || "[".equals(token) || "(".equals(token)) {
                         s.push(token);
+                        temp ++;
                     } else {
-                        st = s.pop();
-                        if (st.equals("{") && token.equals("}")) {
-                            count++;
-                        } else if (st.equals("(") && token.equals(")")) {
-                            count++;
-                        } else if (st.equals("[") && token.equals("]")) {
-                            count++;
-                        } else {
+                        if (temp == 0) {
                             System.out.println("NO");
                             break;
+                        } else {
+                            st = s.pop();
+                            if (st.equals("{") && token.equals("}")) {
+                                count++;
+                            } else if (st.equals("(") && token.equals(")")) {
+                                count++;
+                            } else if (st.equals("[") && token.equals("]")) {
+                                count++;
+                            } else {
+                                System.out.println("NO");
+                                break;
+                            }
                         }
                     }
                 } else {
