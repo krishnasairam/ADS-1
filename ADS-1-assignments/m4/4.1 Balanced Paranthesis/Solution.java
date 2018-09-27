@@ -33,7 +33,7 @@ public final class Solution {
                     if ("{".equals(token) || "[".equals(token) || "(".equals(token)) {
                         s.
                         push(token);
-                        temp ++;
+                        temp++;
                     } else {
                         if (temp == 0) {
                             System.out.println("NO");
@@ -41,7 +41,9 @@ public final class Solution {
                         } else {
                             st = s.pop();
                             //System.out.println(st);
-                            if ((st.equals("{") && token.equals("}")) || (st.equals("(") && token.equals(")")) || (st.equals("[") && token.equals("]"))) {
+                            if ((st.equals("{") && token.equals("}")) || (st.
+                                equals("(") && token.equals(")")) || (st.
+                                equals("[") && token.equals("]"))) {
                                 count++;
                                 temp--;
                             } else {
