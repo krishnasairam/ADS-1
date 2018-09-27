@@ -39,8 +39,6 @@ public final class Solution {
                             break;
                         } else {
                             st = s.pop();
-                            // str += st;
-                            System.out.println(st+ ":" + token );
                             if ((st.equals("{") && token.equals("}")) || (st.equals("(") && token.equals(")")) || (st.equals("[") && token.equals("]"))) {
                                 count++;
                                 temp--;

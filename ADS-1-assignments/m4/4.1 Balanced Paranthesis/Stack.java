@@ -10,7 +10,6 @@ public class Stack {
 		System.out.println(Arrays.toString(myStack));
 	}
 	public String pop() {
-		System.out.println("pop called");
 		if (pointer == 0) {
 			System.out.println("No items to pop");
 		}
