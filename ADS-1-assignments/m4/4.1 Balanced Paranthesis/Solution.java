@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 /**
  * class solution.
  */
@@ -25,14 +24,15 @@ public final class Solution {
             int temp = 0;
             String st = "";
             Stack s = new Stack();
-            String str = "";
+            //String str = "";
             //System.out.println(Arrays.toString(tokens));
             for (String token : tokens) {
-                str += token;
+                //str += token;
                 if (tokens.length % 2 == 0) {
                     //System.out.println(token);
                     if ("{".equals(token) || "[".equals(token) || "(".equals(token)) {
-                        s.push(token);
+                        s.
+                        push(token);
                         temp ++;
                     } else {
                         if (temp == 0) {
@@ -46,7 +46,7 @@ public final class Solution {
                                 temp--;
                             } else {
                                 System.out.println("NO");
-                                //s = new Stack();
+
                                 temp = 0;
                                 break;
                             }
