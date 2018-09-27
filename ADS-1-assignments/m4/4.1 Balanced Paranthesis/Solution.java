@@ -43,14 +43,12 @@ public final class Solution {
                                 count++;
                                 temp--;
                             } else {
-                                s.print();
                                 System.out.println("NO");
                                 break;
                             }
                         }
                     }
                 } else {
-                    s.print();
                     System.out.println("NO");
                     break;
                 }

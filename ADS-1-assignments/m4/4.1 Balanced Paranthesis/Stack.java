@@ -6,9 +6,6 @@ public class Stack {
 		myStack = new String[10];
 		pointer = 0;
 	}
-	public void print(){
-		System.out.println(Arrays.toString(myStack));
-	}
 	public String pop() {
 		if (pointer == 0) {
 			System.out.println("No items to pop");
