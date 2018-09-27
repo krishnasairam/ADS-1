@@ -39,6 +39,7 @@ public final class Solution {
 				} else System.out.println("Illeagal symbol");
 			}
 			s.push(result);
+			s.pop();
 		}
 		System.out.println(result);
 	}
