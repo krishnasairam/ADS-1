@@ -58,8 +58,9 @@ public final class Solution {
             if (count == tokens.length / 2) {
                 System.out.println("YES");
             }
-            if(temp != 0){
+            else {
                 System.out.println("NO");
+                break;
             }
             n--;
         }
