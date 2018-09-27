@@ -46,6 +46,8 @@ public final class Solution {
                                 temp--;
                             } else {
                                 System.out.println("NO");
+                                //s = new Stack();
+                                temp = 0;
                                 break;
                             }
                         }
@@ -58,9 +60,8 @@ public final class Solution {
             if (count == tokens.length / 2) {
                 System.out.println("YES");
             }
-            else {
+            if (temp != 0) {
                 System.out.println("NO");
-                break;
             }
             n--;
         }
