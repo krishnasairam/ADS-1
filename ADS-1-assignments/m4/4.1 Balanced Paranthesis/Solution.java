@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 /**
  * class solution.
  */
@@ -17,33 +18,37 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
+        scan.nextLine();
         while (n != 0) {
-            Stack s = new Stack();
             String[] tokens = scan.nextLine().split("");
             int count = 0;
             String st = "";
+            Stack s = new Stack();
+            System.out.println(Arrays.toString(tokens));
             for (String token : tokens) {
                 if (tokens.length % 2 == 0) {
-                    if (!"}".equals(token) && !"]".equals(token) && !")".equals(token)) {
+                    if ("{".equals(token) || "[".equals(token) || "(".equals(token)) {
                         s.push(token);
-                        st = s.pop();
-                    } else if (st == "{" && token == "}") {
-                        count++;
-                    } else if (st == "(" && token == ")") {
-                        count++;
-                    } else if (st == "[" && token == "]") {
-                        count++;
                     } else {
-                        System.out.println("No");
-                        break;
+                        st = s.pop();
+                        if (st.equals("{") && token.equals("}")) {
+                            count++;
+                        } else if (st.equals("(") && token.equals(")")) {
+                            count++;
+                        } else if (st.equals("[") && token.equals("]")) {
+                            count++;
+                        } else {
+                            System.out.println("NO");
+                            break;
+                        }
                     }
                 } else {
-                    System.out.println("No");
+                    System.out.println("NO");
                     break;
                 }
             }
             if (count == tokens.length / 2) {
-                System.out.println("yes");
+                System.out.println("YES");
             }
             n--;
         }
