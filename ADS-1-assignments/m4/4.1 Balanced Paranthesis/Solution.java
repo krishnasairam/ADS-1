@@ -26,6 +26,7 @@ public final class Solution {
             String st = "";
             Stack s = new Stack();
             String str = "";
+            //System.out.println(Arrays.toString(tokens));
             for (String token : tokens) {
                 str += token;
                 if (tokens.length % 2 == 0) {
@@ -39,6 +40,7 @@ public final class Solution {
                             break;
                         } else {
                             st = s.pop();
+                            //System.out.println(st);
                             if ((st.equals("{") && token.equals("}")) || (st.equals("(") && token.equals(")")) || (st.equals("[") && token.equals("]"))) {
                                 count++;
                                 temp--;
@@ -55,6 +57,9 @@ public final class Solution {
             }
             if (count == tokens.length / 2) {
                 System.out.println("YES");
+            }
+            else{
+                System.out.println("NO");
             }
             n--;
         }
