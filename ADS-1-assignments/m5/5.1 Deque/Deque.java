@@ -122,10 +122,10 @@ class Deque {
         Node ptr = front;
         while (ptr != rear.getLink() )
         {
-            s += ptr.getData()+",";
+            s += ptr.getData()+", ";
             ptr = ptr.getLink();
         }
-        s = s.substring(0, s.length() - 1);
+        s = s.substring(0, s.length() - 2);
         s += "]";
         System.out.println(s);
     }
