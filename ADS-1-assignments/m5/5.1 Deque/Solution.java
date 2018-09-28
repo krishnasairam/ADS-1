@@ -40,7 +40,7 @@ public final class Solution {
                     d.print();
                     break;
                 }
-            case "popright":
+            case "popRight":
                 d.popright();
                 if (d.size() == 0) {
                     System.out.println("[]");

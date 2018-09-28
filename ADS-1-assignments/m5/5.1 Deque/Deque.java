@@ -125,7 +125,7 @@ class Deque {
             s += ptr.getData()+",";
             ptr = ptr.getLink();
         }
-        s.substring(0, s.length() - 1);
+        s = s.substring(0, s.length() - 1);
         s += "]";
         System.out.println(s);
     }
