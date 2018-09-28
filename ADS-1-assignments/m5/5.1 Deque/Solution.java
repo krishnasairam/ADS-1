@@ -23,19 +23,31 @@ public final class Solution {
             switch (tokens[0]) {
             case "pushLeft":
                 d.pushleft(Integer.parseInt(tokens[1]));
+                d.print();
                 break;
             case "pushRight":
                 d.pushright(Integer.parseInt(tokens[1]));
+                d.print();
                 break;
             case "size":
-                d.size();
+                System.out.println(d.size());
                 break;
             case "popLeft":
-                System.out.println(d.popleft());
-                break;
+                d.popleft();
+                if (d.size() == 0) {
+                    System.out.println("[]");
+                } else {
+                    d.print();
+                    break;
+                }
             case "popright":
-                System.out.println(d.popright());
-                break;
+                d.popright();
+                if (d.size() == 0) {
+                    System.out.println("[]");
+                } else {
+                    d.print();
+                    break;
+                }
             default :
                 break;
             }

@@ -83,30 +83,50 @@ class Deque {
 
     public int popleft() {
         if (isEmpty() ) {
-            System.out.println("No elements to pop");
-        }
-        Node ptr = front;
-        front = ptr.getLink();
-        if (front == null) {
-            rear = null;
-        }
-        size-- ;
-        return ptr.getData();
+            System.out.println("Deck is empty");
+        } else {
+            Node ptr = front;
+            front = ptr.getLink();
+            if (front == null) {
+                rear = null;
+            }
+            size-- ;
+            return ptr.getData();
+        } return -1;
     }
     public int popright() {
         if (isEmpty()) {
             System.out.println("No elements to pop");
+        } else {
+            int ele = rear.getData();
+            Node s = front;
+            Node t = front;
+            while (s != rear) {
+                t = s;
+                s = s.getLink();
+            }
+            rear = t;
+            rear.setLink(null);
+            size --;
+            return ele;
         }
-        int ele = rear.getData();
-        Node s = front;
-        Node t = front;
-        while (s != rear) {
-            t = s;
-            s = s.getLink();
+        return -1;
+    }
+    public void print() {
+        String s = "[";
+        if (size == 0)
+        {
+            System.out.println("[]");
+            return ;
         }
-        rear = t;
-        rear.setLink(null);
-        size --;
-        return ele;
+        Node ptr = front;
+        while (ptr != rear.getLink() )
+        {
+            s += ptr.getData()+",";
+            ptr = ptr.getLink();
+        }
+        s.substring(0, s.length() - 1);
+        s += "]";
+        System.out.println(s);
     }
 }
