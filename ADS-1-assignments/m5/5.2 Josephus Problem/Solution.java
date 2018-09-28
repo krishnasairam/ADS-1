@@ -28,11 +28,11 @@ public final class Solution {
             }
             //System.out.println(Arrays.toString(new1));
             int count = size, i = 1, index = 0;
-            String s = "";
             while (count != 0) {
                 if (new1[index % size] != -1) {
                     if (i == temp) {
-                        s += new1[index % size] + " ";
+                        System.out.print(new1[index % size]);
+                        System.out.print(" ");
                         new1[index % size] = -1;
                         count--;
                         i = 1;
@@ -46,8 +46,7 @@ public final class Solution {
                 }
 
             }
-            s = s.substring(0, s.length());
-            System.out.println(s);
+            System.out.println();
             n--;
         }
     }
