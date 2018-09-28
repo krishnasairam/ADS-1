@@ -46,6 +46,7 @@ public final class Solution {
                 }
 
             }
+            s = s.substring(0, s.length());
             System.out.println(s);
             n--;
         }
