@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 /**
  * class solution.
  */
@@ -52,3 +51,4 @@ public final class Solution {
         }
     }
 }
+
