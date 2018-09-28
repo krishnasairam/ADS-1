@@ -33,21 +33,21 @@ public final class Solution {
                 System.out.println(d.size());
                 break;
             case "popLeft":
-                d.popleft();
                 if (d.size() == 0) {
-                    System.out.println("[]");
+                    System.out.println("Deck is empty");
                 } else {
+                    d.popleft();
                     d.print();
-                    break;
                 }
+                break;
             case "popRight":
-                d.popright();
                 if (d.size() == 0) {
-                    System.out.println("[]");
+                    System.out.println("Deck is empty");
                 } else {
+                    d.popright();
                     d.print();
-                    break;
                 }
+                break;
             default :
                 break;
             }

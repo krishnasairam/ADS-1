@@ -83,7 +83,7 @@ class Deque {
 
     public int popleft() {
         if (isEmpty() ) {
-            System.out.println("Deck is empty");
+            //System.out.println("Deck is empty");
         } else {
             Node ptr = front;
             front = ptr.getLink();
@@ -96,7 +96,7 @@ class Deque {
     }
     public int popright() {
         if (isEmpty()) {
-            System.out.println("No elements to pop");
+            //System.out.println("No elements to pop");
         } else {
             int ele = rear.getData();
             Node s = front;
