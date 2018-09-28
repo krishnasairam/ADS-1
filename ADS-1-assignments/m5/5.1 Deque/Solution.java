@@ -31,10 +31,10 @@ public final class Solution {
                 d.size();
                 break;
             case "popLeft":
-                d.popleft();
+                System.out.println(d.popleft());
                 break;
             case "popright":
-                d.popright();
+                System.out.println(d.popright());
                 break;
             default :
                 break;
