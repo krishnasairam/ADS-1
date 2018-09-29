@@ -58,7 +58,7 @@ class LinkedList {
         return size;
     }
 
-    public void push(int data) {
+    public void pushleft(int data) {
         Node nptr = new Node(data, null);
         size++ ;
         if (front == null) {
@@ -67,6 +67,17 @@ class LinkedList {
         } else {
             nptr.setLink(front);
             front = nptr;
+        }
+    }
+    public void pushright(int data) {
+        Node nptr = new Node(data, null);
+        size++ ;
+        if (rear == null) {
+            rear = nptr;
+            front = rear;
+        } else {
+            rear.setLink(nptr);
+            rear = nptr;
         }
     }
     public int popright() {

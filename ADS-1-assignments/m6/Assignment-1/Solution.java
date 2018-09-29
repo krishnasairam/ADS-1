@@ -8,7 +8,7 @@ class AddLargeNumbers {
         String[] digits = number.split("");
         LinkedList l = new LinkedList();
         for (String i : digits) {
-            l.push(Integer.parseInt(i));
+            l.pushleft(Integer.parseInt(i));
         }
         return l;
     }
@@ -35,11 +35,11 @@ class AddLargeNumbers {
             } else {
                 temp = l.popleft() + m.popleft();
             }
-            n.push((temp % 10) + carry);
+            n.pushright((temp % 10) + carry);
             carry = temp / 10;
         }
         if (carry != 0) {
-            n.push(carry);
+            n.pushright(carry);
         }
         return n;
     }
