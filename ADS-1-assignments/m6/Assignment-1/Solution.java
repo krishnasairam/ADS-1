@@ -3,8 +3,17 @@ import java.util.Scanner;
  * Class for add large numbers.
  */
 class AddLargeNumbers {
-
-    public static LinkedList numberToDigits(String number) {
+    public AddLargeNumbers() {
+        // empty constructor.
+    }
+    /**
+     * adding numbers to stack.
+     *
+     * @param      number  The number
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public static LinkedList numberToDigits(final String number) {
         String[] digits = number.split("");
         LinkedList l = new LinkedList();
         for (String i : digits) {
@@ -12,15 +21,28 @@ class AddLargeNumbers {
         }
         return l;
     }
-
-    public static String digitsToNumber(LinkedList list) {
+    /**
+     * removing numbers to stack.
+     *
+     * @param      list  The list
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public static String digitsToNumber(final LinkedList list) {
         LinkedList l = list;
         String s = "";
         while (l.size() != 0) {
             s += l.popleft();
         } return s;
     }
-
+    /**
+     * Adds large numbers.
+     *
+     * @param      list1  The list 1
+     * @param      list2  The list 2
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
         LinkedList l = list1;
         LinkedList m = list2;
@@ -49,7 +71,18 @@ class AddLargeNumbers {
         return n;
     }
 }
+/**
+ * Class for solution.
+ */
 public class Solution {
+    public Solution() {
+        // empty constructor.
+    }
+    /**
+     * main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
@@ -71,5 +104,4 @@ public class Solution {
             break;
         }
     }
-
 }
