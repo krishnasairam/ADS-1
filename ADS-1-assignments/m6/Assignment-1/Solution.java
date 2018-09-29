@@ -29,11 +29,11 @@ class AddLargeNumbers {
         int temp = 0;
         while (l.size() != 0 || m.size() != 0) {
             if (m.size() == 0) {
-                temp = l.popleft();
+                temp = l.popright();
             } else if (l.size() == 0) {
-                temp = m.popleft();
+                temp = m.popright();
             } else {
-                temp = l.popleft() + m.popleft();
+                temp = l.popright() + m.popright();
             }
             n.pushright((temp % 10) + carry);
             carry = temp / 10;
