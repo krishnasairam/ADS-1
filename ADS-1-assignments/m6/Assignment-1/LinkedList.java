@@ -70,16 +70,22 @@ class LinkedList {
         }
     }
     public int pop() {
-        if (isEmpty() ) {
+        if (isEmpty()) {
+            //System.out.println("No elements to pop");
         } else {
-            Node ptr = front;
-            front = ptr.getLink();
-            if (front == null) {
-                rear = null;
+            int ele = rear.getData();
+            Node s = front;
+            Node t = front;
+            while (s != rear) {
+                t = s;
+                s = s.getLink();
             }
-            size-- ;
-            return ptr.getData();
-        } return -1;
+            rear = t;
+            rear.setLink(null);
+            size --;
+            return ele;
+        }
+        return -1;
     }
     public String toString() {
         String s = "";
