@@ -17,7 +17,7 @@ class AddLargeNumbers {
         LinkedList l = list;
         String s = "";
         while (l.size() != 0) {
-            s += l.pop();
+            s += l.popright();
         } return s;
     }
 
@@ -29,11 +29,11 @@ class AddLargeNumbers {
         int temp = 0;
         while (l.size() != 0 || m.size() != 0) {
             if (m.size() == 0) {
-                temp = l.pop();
+                temp = l.popleft();
             } else if (l.size() == 0) {
-                temp = m.pop();
+                temp = m.popleft();
             } else {
-                temp = l.pop() + m.pop();
+                temp = l.popleft() + m.popleft();
             }
             n.push((temp % 10) + carry);
             carry = temp / 10;

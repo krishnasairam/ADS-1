@@ -69,7 +69,7 @@ class LinkedList {
             front = nptr;
         }
     }
-    public int pop() {
+    public int popright() {
         if (isEmpty()) {
             //System.out.println("No elements to pop");
         } else {
@@ -86,6 +86,19 @@ class LinkedList {
             return ele;
         }
         return -1;
+    }
+    public int popleft() {
+        if (isEmpty() ) {
+            //System.out.println("Deck is empty");
+        } else {
+            Node ptr = front;
+            front = ptr.getLink();
+            if (front == null) {
+                rear = null;
+            }
+            size-- ;
+            return ptr.getData();
+        } return -1;
     }
     public String toString() {
         String s = "";
