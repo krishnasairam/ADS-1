@@ -35,8 +35,13 @@ class AddLargeNumbers {
             } else {
                 temp = l.popright() + m.popright();
             }
-            n.pushleft((temp % 10) + carry);
-            carry = temp / 10;
+            if ((temp % 10) + carry == 10) {
+                n.pushleft(0);
+                carry = 1;
+            } else {
+                n.pushleft((temp % 10) + carry);
+                carry = temp / 10;
+            }
         }
         if (carry != 0) {
             n.pushleft(carry);
