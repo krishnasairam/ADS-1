@@ -6,7 +6,7 @@ class AddLargeNumbers {
     /**
      * Constructs the object.
      */
-    AddLargeNumbers() {
+    private AddLargeNumbers() {
         // empty constructor.
     }
     /**
