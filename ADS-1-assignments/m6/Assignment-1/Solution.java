@@ -46,8 +46,8 @@ class AddLargeNumbers {
      *
      * @return     { description_of_the_return_value }
      */
-    public static LinkedList addLargeNumbers(final LinkedList list1
-            , final LinkedList list2) {
+    public static LinkedList addLargeNumbers(final LinkedList list1,
+             final LinkedList list2) {
         LinkedList l = list1;
         LinkedList m = list2;
         LinkedList n = new LinkedList();
@@ -79,7 +79,7 @@ class AddLargeNumbers {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -107,8 +107,8 @@ public class Solution {
         case "addLargeNumbers":
             pDigits = AddLargeNumbers.numberToDigits(p);
             qDigits = AddLargeNumbers.numberToDigits(q);
-            LinkedList result = AddLargeNumbers.addLargeNumbers
-                                (pDigits, qDigits);
+            LinkedList result = AddLargeNumbers.addLargeNumbers(
+                    pDigits, qDigits);
             System.out.println(AddLargeNumbers.digitsToNumber(result));
             break;
         default :
