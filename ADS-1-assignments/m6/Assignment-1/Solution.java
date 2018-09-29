@@ -8,7 +8,7 @@ class AddLargeNumbers {
         String[] digits = number.split("");
         LinkedList l = new LinkedList();
         for (String i : digits) {
-            l.pushleft(Integer.parseInt(i));
+            l.pushright(Integer.parseInt(i));
         }
         return l;
     }
@@ -17,7 +17,7 @@ class AddLargeNumbers {
         LinkedList l = list;
         String s = "";
         while (l.size() != 0) {
-            s += l.popright();
+            s += l.popleft();
         } return s;
     }
 
