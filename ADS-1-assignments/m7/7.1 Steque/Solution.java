@@ -21,9 +21,6 @@ public final class Solution {
             Steque l = new Steque();
             while (scan.hasNext()) {
                 String token = scan.nextLine();
-                if (token.equals("")) {
-                   break;
-                }
                 String[] tokens = token.split(" ");
                 switch (tokens[0]) {
                 case "push":
@@ -40,6 +37,9 @@ public final class Solution {
                     break;
                 default :
                     break;
+                }
+                if (token.equals("")) {
+                   break;
                 }
             }
             System.out.println();
