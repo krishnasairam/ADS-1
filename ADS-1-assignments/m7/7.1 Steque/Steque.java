@@ -104,8 +104,6 @@ class Steque {
             }
             s = s.substring(0, s.length() - 2);
             System.out.println(s);
-        } else {
-            System.out.println("Steque is empty.");
         }
     }
 }
