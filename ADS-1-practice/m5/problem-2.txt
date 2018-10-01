@@ -1,0 +1,2 @@
+This method will reverse all the elements in the queue as we first dequeue element in queue and push in stack when poping the element the elements will comes in reverse order.then we are again adding to the queue.
+so, the queue has all the elements in reverse order, when compared to the initalm queue.
