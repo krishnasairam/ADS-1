@@ -35,9 +35,6 @@ public final class Solution {
                     l.print();
                     break;
                 case "pop":
-                    if (l.size() == 1) {
-                        System.out.println("Steque is empty.");
-                    }
                     l.pop();
                     l.print();
                     break;
