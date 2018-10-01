@@ -94,17 +94,17 @@ class Steque {
         } return -1;
     }
     public void print() {
-        String s = "";
-        if (size == 0) {
-            //System.out.println("Steque is empty.");
-            return ;
+        if (front != null) {
+            String s = "";
+            Node ptr = front;
+            while (ptr != rear.getLink() ) {
+                s += ptr.getData() + ", ";
+                ptr = ptr.getLink();
+            }
+            s = s.substring(0, s.length() - 2);
+            System.out.println(s);
+        } else {
+            System.out.println("Steque is empty.");
         }
-        Node ptr = front;
-        while (ptr != rear.getLink() ) {
-            s += ptr.getData() + ", ";
-            ptr = ptr.getLink();
-        }
-        s = s.substring(0, s.length() - 2);
-        System.out.println(s);
     }
 }
