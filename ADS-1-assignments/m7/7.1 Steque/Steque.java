@@ -51,7 +51,7 @@ class Steque {
     }
     /*  Function to check if queue is empty */
     public boolean isEmpty() {
-        return (front == null && rear == null);
+        return (front == null);
     }
     /*  Function to get the size of the queue */
     public int size() {
