@@ -96,7 +96,7 @@ class Steque {
     public void print() {
         String s = "";
         if (size == 0) {
-            //System.out.println("");
+            System.out.println("Steque is empty.");
             return ;
         }
         Node ptr = front;
