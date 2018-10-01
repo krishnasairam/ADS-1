@@ -80,7 +80,7 @@ class Steque {
             rear = nptr;
         }
     }
-    public void pop() {
+    public int pop() {
         if (!isEmpty()) {
             Node ptr = front;
             front = ptr.getLink();
@@ -88,10 +88,10 @@ class Steque {
                 rear = null;
             }
             size-- ;
-            //return ptr.getData();
+            return ptr.getData();
         } else {
             System.out.println("Steque is empty.");
-        }
+        } return -1;
 
     }
     public void print() {
