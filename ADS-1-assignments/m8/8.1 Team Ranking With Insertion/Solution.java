@@ -22,7 +22,7 @@ final class Solution {
         while (sc.hasNextLine()) {
             String[] tokens = sc.nextLine().split(",");
             list[n++] = new Teams(tokens[0], Integer.parseInt(tokens[1]),
-                                  Integer.parseInt(tokens[2]), Integer.parseInt(tokens[2 + 1]));
+            Integer.parseInt(tokens[2]), Integer.parseInt(tokens[2 + 1]));
         }
         System.out.println(t.leaderboard(list, n));
     }
