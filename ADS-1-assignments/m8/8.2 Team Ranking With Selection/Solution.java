@@ -16,7 +16,7 @@ final class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        Insertion t = new Insertion();
+        Selection t = new Selection();
         Teams[] list = new Teams[2 * (2 + 2 + 1)];
         int n = 0;
         while (sc.hasNextLine()) {

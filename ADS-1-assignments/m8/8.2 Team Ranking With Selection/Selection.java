@@ -118,15 +118,15 @@ class Teams implements Comparable<Teams> {
 /**
  * Class for table.
  */
-public class Insertion {
+public class Selection {
     /**
      * Constructs the object.
      */
-    public Insertion() {
+    public Selection() {
 
     }
     /**
-     * Insertion Sort function for array.
+     * Selection Sort function for array.
      *
      * best case: O(n^2)
      * worst case: O(n^2)
@@ -138,9 +138,10 @@ public class Insertion {
     public void Sort(Comparable[] array, int size) {
         int n = size;
         for (int i = 0; i < n; i++) {
-            for (int j = i ; j > 0; j--) {
-                if (more(array, j, j - 1)) {
-                    swap(array, j, j - 1);
+            int min = i;
+            for (int j = i + 1; j < n; j++) {
+                if (less(array, i, j)) {
+                    swap(array, j, min);
                 }
             }
         }
@@ -157,8 +158,8 @@ public class Insertion {
      * average case: O(1)
      * @return     { description_of_the_return_value }
      */
-    public boolean more(Comparable[] arr, int i, int j) {
-        return arr[i].compareTo(arr[j]) > 0;
+    public boolean less(Comparable[] arr, int i, int j) {
+        return arr[i].compareTo(arr[j]) < 0;
     }
     /**
      * Swaps the values in the array.
