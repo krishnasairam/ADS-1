@@ -139,7 +139,7 @@ public class Insertion {
         int n = size;
         for (int i = 0; i < n; i++) {
             for (int j = i ; j > 0; j--) {
-                if (less(array, j, j - 1)) {
+                if (more(array, j, j - 1)) {
                     swap(array, j, j - 1);
                 }
             }
@@ -157,8 +157,8 @@ public class Insertion {
      * average case: O(1)
      * @return     { description_of_the_return_value }
      */
-    public boolean less(Comparable[] arr, int i, int j) {
-        return arr[i].compareTo(arr[j]) < 0;
+    public boolean more(Comparable[] arr, int i, int j) {
+        return arr[i].compareTo(arr[j]) > 0;
     }
     /**
      * Swaps the values in the array.
