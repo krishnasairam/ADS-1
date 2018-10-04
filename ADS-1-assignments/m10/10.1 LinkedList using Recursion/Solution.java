@@ -18,7 +18,7 @@ final class Solution {
         Scanner sc = new Scanner(System.in);
         LinkedList l = new LinkedList();
         while (sc.hasNextLine()) {
-            String[] tokens = sc.nextLine().split(",");
+            String[] tokens = sc.nextLine().split(" ");
             switch (tokens[0]) {
             case "insertAt":
                 l.insertAt(Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]));

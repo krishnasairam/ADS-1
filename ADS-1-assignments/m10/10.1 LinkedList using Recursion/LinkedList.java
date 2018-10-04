@@ -8,7 +8,7 @@ public class LinkedList {
         }
     }
     Node head;
-    public void insertAt(int data, int position) {
+    public void insertAt(int position, int data) {
         head = insertHelper(head, position , data);
     }
     Node insertHelper(Node head, int cnt, int ele) {
