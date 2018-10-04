@@ -28,11 +28,13 @@ public class LinkedList {
         head.next = null;
         return nhead;
     }
-    public void print() {
+    public String print() {
         Node thead = head;
+        String s  = "";
         while (thead != null) {
-            System.out.println(thead.data);
+            s += thead.data + ", ";
             thead = thead.next;
         }
+        return s;
     }
 }
