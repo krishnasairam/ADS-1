@@ -23,6 +23,7 @@ final class Solution {
             case "insertAt":
                 l.insertAt(Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]));
                 l.print();
+                System.out.println();
                 break;
             case "reverse":
                 l.reverse();
