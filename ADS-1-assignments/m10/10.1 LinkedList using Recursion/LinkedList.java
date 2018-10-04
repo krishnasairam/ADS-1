@@ -35,6 +35,7 @@ public class LinkedList {
             s += thead.data + ", ";
             thead = thead.next;
         }
-        return s;
+
+        return s.substring(0 , s.length() - 2);
     }
 }

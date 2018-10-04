@@ -26,7 +26,7 @@ final class Solution {
                 break;
             case "reverse":
                 l.reverse();
-                l.print();
+                System.out.println(l.print());
                 break;
             default:
                 break;
