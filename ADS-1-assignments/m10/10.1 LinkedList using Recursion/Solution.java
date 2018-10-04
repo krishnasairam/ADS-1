@@ -23,6 +23,7 @@ final class Solution {
             case "insertAt":
                 if (Integer.parseInt(tokens[1]) < 0) {
                     System.out.println("Can't insert at this position.");
+                    break;
                 }
                 l.insertAt(Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]));
                 System.out.println(l.print());

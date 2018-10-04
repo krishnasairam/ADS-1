@@ -37,7 +37,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at LinkedList.insertHelper(LinkedList.java:16)
 	at LinkedList.insertHelper(LinkedList.java:16)
 	at LinkedList.insertAt(LinkedList.java:12)
-	at Solution.main(Solution.java:27)
+	at Solution.main(Solution.java:28)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -47,5 +47,5 @@ Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 0, e
 	at java.base/java.lang.String.checkBoundsBeginEnd(Unknown Source)
 	at java.base/java.lang.String.substring(Unknown Source)
 	at LinkedList.print(LinkedList.java:39)
-	at Solution.main(Solution.java:32)
+	at Solution.main(Solution.java:33)
 ----------------------------------------
