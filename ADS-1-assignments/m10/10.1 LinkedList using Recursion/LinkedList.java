@@ -12,8 +12,7 @@ public class LinkedList {
         head = insertHelper(head, position , data);
     }
     Node insertHelper(Node head, int cnt, int ele) {
-        if (cnt < 0) System.out.println("Can't insert at this position.");
-        else if (cnt == 0) return new Node(ele, head);
+        if (cnt == 0) return new Node(ele, head);
         head.next = insertHelper(head.next, cnt - 1, ele);
         return head;
     }
