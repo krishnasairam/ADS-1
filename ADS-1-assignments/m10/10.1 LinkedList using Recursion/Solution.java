@@ -17,14 +17,13 @@ final class Solution {
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         LinkedList l = new LinkedList();
-        int size = 0;
         while (sc.hasNextLine()) {
             String[] tokens = sc.nextLine().split(" ");
             switch (tokens[0]) {
             case "insertAt":
-                l.insertAt(Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]));
+                if (!l.insertAt(Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]))) {
                 System.out.println(l.print());
-                size ++;
+                }
                 break;
             case "reverse":
                 l.reverse();
