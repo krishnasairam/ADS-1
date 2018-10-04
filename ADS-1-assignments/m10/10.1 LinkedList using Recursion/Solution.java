@@ -17,16 +17,18 @@ final class Solution {
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         LinkedList l = new LinkedList();
+        int size = 0;
         while (sc.hasNextLine()) {
             String[] tokens = sc.nextLine().split(" ");
             switch (tokens[0]) {
             case "insertAt":
-                if (Integer.parseInt(tokens[1]) < 0) {
+                if (Integer.parseInt(tokens[1]) < 0 && Integer.parseInt(tokens[1]) > size) {
                     System.out.println("Can't insert at this position.");
                     break;
                 }
                 l.insertAt(Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]));
                 System.out.println(l.print());
+                size ++;
                 break;
             case "reverse":
                 l.reverse();
