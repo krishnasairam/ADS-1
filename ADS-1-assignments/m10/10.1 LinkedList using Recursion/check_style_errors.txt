@@ -1,0 +1,5 @@
+Starting audit...
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m10\10.1 LinkedList using Recursion\Solution.java:24: Line is longer than 80 characters (found 85). [LineLength]
+Audit done.
+Checkstyle ends with 2 errors.
