@@ -9,7 +9,11 @@ public class LinkedList {
     }
     Node head;
     public void insertAt(int position, int data) {
-        head = insertHelper(head, position , data);
+        try {
+            head = insertHelper(head, position , data);
+        } catch (Exception e) {
+            System.out.println("Can't insert at this position.");
+        }
     }
     Node insertHelper(Node head, int cnt, int ele) {
         if (cnt == 0) return new Node(ele, head);

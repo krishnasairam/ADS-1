@@ -22,10 +22,6 @@ final class Solution {
             String[] tokens = sc.nextLine().split(" ");
             switch (tokens[0]) {
             case "insertAt":
-                if (Integer.parseInt(tokens[1]) < 0 && Integer.parseInt(tokens[1]) > size) {
-                    System.out.println("Can't insert at this position.");
-                    break;
-                }
                 l.insertAt(Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]));
                 System.out.println(l.print());
                 size ++;
