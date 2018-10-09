@@ -26,8 +26,8 @@ final class Solution {
         Studentdetails[] list = new Studentdetails[n];
         int i = 0;
         while (n > 0) {
-            String[] tokens = sc.nextLine().split(",");
-            list[n++] = new Studentdetails(tokens[0], tokens[1], Integer.parseInt(tokens[2]),
+            String[] tokens = sc.next().split(",");
+            list[i++] = new Studentdetails(tokens[0], tokens[1], Integer.parseInt(tokens[2]),
             Integer.parseInt(tokens[3]), Integer.parseInt(tokens[4]),
             Integer.parseInt(tokens[5]), tokens[6]);
             n--;
