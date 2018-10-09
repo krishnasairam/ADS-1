@@ -313,6 +313,24 @@ class Selection {
                     open = open - 1;
                     System.out.println(array[j].toString());
                 }
+            } else {
+                if (array[j].getres().equals("ST") && stvac != 0) {
+                    vac = vac - 1;
+                    stvac = stvac - 1;
+                    System.out.println(array[j].toString());
+                } else if (array[j].getres().equals("SC") && scvac != 0) {
+                    vac = vac - 1;
+                    scvac = scvac - 1;
+                    System.out.println(array[j].toString());
+                } else if (array[j].getres().equals("BC") && bcvac != 0) {
+                    vac = vac - 1;
+                    bcvac = bcvac - 1;
+                    System.out.println(array[j].toString());
+                } else if (array[j].getres().equals("Open") && eopen > 0) {
+                    vac = vac - 1;
+                    eopen = eopen - 1;
+                    System.out.println(array[j].toString());
+                }
             }
         }
     }
