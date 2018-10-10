@@ -33,6 +33,7 @@ final class Solution {
             n--;
         }
         Heapsort h = new Heapsort(o, p, q, r, s, list, i);
+        list = h.sort();
         h.board(temp);
     }
 }
