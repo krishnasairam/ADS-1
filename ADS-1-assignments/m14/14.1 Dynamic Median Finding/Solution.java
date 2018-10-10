@@ -27,9 +27,9 @@ final class Solution {
 			float median = ((float)list[(i - 1)/2] + (float)list[(i/2)/2]);
 				System.out.println(median);
 		} else if(i == 2) {
-			System.out.println((list[0] + list[1]) / 2);
+			System.out.println((float)(list[0] + list[1]) / 2);
 		} else {
-			System.out.println(list[0]);
+			System.out.println((float)list[0]);
 		}
 		n--;
 		}
