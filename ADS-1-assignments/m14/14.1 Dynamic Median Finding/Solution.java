@@ -24,7 +24,7 @@ final class Solution {
 			list [i++] = Integer.parseInt(scan.nextLine());
 			if (i > 2) {
 			heap.sort(list, i);
-			float median = (((float)list[(i + 1)/2] + (float)list[(i/2)])/2);
+			float median = (((float)list[(i - 1)/2] + (float)list[(i/2)])/2);
 				System.out.println(median);
 		} else if(i == 2) {
 			System.out.println((float)(list[0] + list[1]) / 2);
