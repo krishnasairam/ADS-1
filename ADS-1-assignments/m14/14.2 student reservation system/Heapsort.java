@@ -49,22 +49,14 @@ public class Heapsort {
      * @param      sc  sc vacancies
      * @param      st  st vacancies
      */
-    public Heapsort(final Integer v, final Integer o, final Integer bc, final Integer sc, final Integer st) {
+    public Heapsort(final Integer v, final Integer o, final Integer bc, final Integer sc, final Integer st, final Studentdetails[] a, final int n) {
         this.vac = v;
         this.open = o;
         this.bc = bc;
         this.sc = sc;
         this.st = st;
-    }
-    /**
-     * Constructs the object.
-     *
-     * @param      a     { parameter_description }
-     * @param      n     { parameter_description }
-     */
-    public Heapsort(final Studentdetails[] a, final int n) {
-        array = a;
-        size = n;
+        this.array = a;
+        this.size = n;
     }
     /**
      * sorts.

@@ -22,7 +22,6 @@ final class Solution {
         int q = Integer.parseInt(sc.nextLine());
         int r = Integer.parseInt(sc.nextLine());
         int s = Integer.parseInt(sc.nextLine());
-        Heapsort h = new Heapsort(o, p, q, r, s);
         Studentdetails[] list = new Studentdetails[n];
         int temp = n;
         int i = 0;
@@ -33,7 +32,7 @@ final class Solution {
             Integer.parseInt(tokens[5]), tokens[6]);
             n--;
         }
-        Heapsort heap = new Heapsort(list, i);
+        Heapsort h = new Heapsort(o, p, q, r, s, list, i);
         h.board(temp);
     }
 }
