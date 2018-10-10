@@ -1,4 +1,3 @@
-import java.util.Scanner;
 /**
  * Class for details.
  */
@@ -42,7 +41,8 @@ class Studentdetails implements Comparable<Studentdetails> {
      * @param      to     total marks
      * @param      res    reservation
      */
-    Studentdetails(final String stu, final String date, final Integer s1, final Integer s2, final Integer s3, final Integer to, final String res) {
+    Studentdetails(final String stu, final String date, final Integer s1,
+     final Integer s2, final Integer s3, final Integer to, final String res) {
         this.name = stu;
         this.dob = date;
         this.s1marks = s1;
@@ -121,7 +121,14 @@ class Studentdetails implements Comparable<Studentdetails> {
      *
      * @return     int.
      */
-    public Integer comparedate(Studentdetails that) {
+    /**
+     * comparedate.
+     *
+     * @param      that  The that
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Integer comparedate(final Studentdetails that) {
         String[] d1 = this.getdob().split("-");
         String[] d2 = that.getdob().split("-");
         if (Integer.parseInt(d1[2]) > Integer.parseInt(d2[2])) {
@@ -158,7 +165,7 @@ class Studentdetails implements Comparable<Studentdetails> {
          *
          * @return     -1 or 0 or 1
          */
-    public int compareTo(Studentdetails that) {
+    public int compareTo(final Studentdetails that) {
         if (this.gettotal() > that.gettotal()) {
             return 1;
         } else if (this.gettotal() < that.gettotal()) {

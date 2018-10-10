@@ -1,8 +1,2 @@
 Starting audit...
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m14\14.2 student reservation system\Studentdetails.java:1:8: Unused import - java.util.Scanner. [UnusedImports]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m14\14.2 student reservation system\Studentdetails.java:45: Line is longer than 80 characters (found 147). [LineLength]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m14\14.2 student reservation system\Studentdetails.java:124:32: Parameter that should be final. [FinalParameters]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m14\14.2 student reservation system\Studentdetails.java:124:47: Expected @param tag for 'that'. [JavadocMethod]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m14\14.2 student reservation system\Studentdetails.java:161:26: Parameter that should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 5 errors.
