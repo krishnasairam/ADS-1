@@ -125,17 +125,17 @@ class Studentdetails implements Comparable<Studentdetails> {
         String[] d1 = this.getdob().split("-");
         String[] d2 = that.getdob().split("-");
         if (Integer.parseInt(d1[2]) > Integer.parseInt(d2[2])) {
-            return -1;
+            return 1;
         } else if (Integer.parseInt(d1[2]) < Integer.parseInt(d2[2])) {
-            return 1;
-        } else if (Integer.parseInt(d1[1]) < Integer.parseInt(d2[1])) {
             return -1;
         } else if (Integer.parseInt(d1[1]) < Integer.parseInt(d2[1])) {
             return 1;
-        } else if (Integer.parseInt(d1[0]) < Integer.parseInt(d2[0])) {
+        } else if (Integer.parseInt(d1[1]) < Integer.parseInt(d2[1])) {
             return -1;
         } else if (Integer.parseInt(d1[0]) < Integer.parseInt(d2[0])) {
             return 1;
+        } else if (Integer.parseInt(d1[0]) < Integer.parseInt(d2[0])) {
+            return -1;
         } else {
             return 0;
         }
