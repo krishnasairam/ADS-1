@@ -62,21 +62,9 @@ class Book {
             return 1;
         } else if (this.name.compareTo(that.name) < 0) {
             return -1;
-        /*} else {
-            if (this.author.compareTo(that.author) > 0) {
-                return 1;
-            } else if (this.author.compareTo(that.author) < 0) {
-                return -1;
-            } else {
-                if (this.price.compareTo(that.price) > 0) {
-                    return 1;
-                } else if (this.price.compareTo(that.price) < 0) {
-                    return -1;*/
-                } else {
-                    return 0;
-                }
-           // }
-        //}
+        } else {
+            return 0;
+        }
     }
 }
 /**
