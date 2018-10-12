@@ -18,8 +18,9 @@ public final class Solution {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
+        final int mag = 522;
         MinPQ<CubeSum> pq = new MinPQ<CubeSum>();
-        for (int i = 1; i <= 550; i++) {
+        for (int i = 1; i <= mag; i++) {
             pq.insert(new CubeSum(i, i));
         }
         // int i = 0;
@@ -32,20 +33,20 @@ public final class Solution {
             CubeSum c = pq.delMin();
             if (prev.getsum() == c.getsum()) {
                 p++;
-                if (p == m)
-                {
+                if (p == m) {
                     sum = c.getsum();
 
-                    if (++k == n) break;
+                    if (++k == n) {
+                        break;
+                    }
                 }
-            }
-            else {
+            } else {
                 p = 1;
             }
             prev = c;
-            if (c.j < 550)
+            if (c.j < mag) {
                 pq.insert(new CubeSum(c.i, c.j + 1));
-            // }
+            }
         }
         System.out.println(sum);
 
