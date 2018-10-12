@@ -1,20 +1,9 @@
 Starting audit...
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:7:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:7:9: Variable 'i' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:8:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:8:9: Variable 'j' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:15:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:15:30: 'i' hides a field. [HiddenField]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:15:43: 'j' hides a field. [HiddenField]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:28: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:29: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:56:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:80:30: '550' is a magic number. [MagicNumber]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:94:17: '{' at column 17 should be on the previous line. [LeftCurly]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:97: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:99:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:104: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:104:23: '550' is a magic number. [MagicNumber]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:22:30: '550' is a magic number. [MagicNumber]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:36:17: '{' at column 17 should be on the previous line. [LeftCurly]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:39: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:41:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:46: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:46:23: '550' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 6 errors.
