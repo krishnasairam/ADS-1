@@ -46,8 +46,8 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        int n = 500;
-        Integer p = scan.nextInt();
+        int n1 = 500;
+        Integer n = scan.nextInt();
         Integer m = scan.nextInt();
         MinPQ<CubeSum> pq = new MinPQ<CubeSum>();
         for (int k = 1; k <= n; k++) {
@@ -55,7 +55,7 @@ public final class Solution {
         }
         CubeSum prev = new CubeSum(0, 0);
         long sum = 0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < 500; i++) {
             int a = 0;
             while (!pq.isEmpty()) {
                 CubeSum c = pq.delMin();
@@ -69,7 +69,7 @@ public final class Solution {
                     prev = c;
                     a = 1;
                 }
-                if (c.j < n) {
+                if (c.j < 500) {
                     pq.insert(new CubeSum(c.i, c.j + 1));
                 }
             }

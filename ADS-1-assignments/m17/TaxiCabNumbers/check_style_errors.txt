@@ -19,6 +19,8 @@ Starting audit...
 [ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:22:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:25:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:28:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:49:17: '500' is a magic number. [MagicNumber]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:49:18: '500' is a magic number. [MagicNumber]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:58:29: '500' is a magic number. [MagicNumber]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:72:27: '500' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 23 errors.
