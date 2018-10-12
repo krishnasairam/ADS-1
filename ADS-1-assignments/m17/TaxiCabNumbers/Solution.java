@@ -45,35 +45,39 @@ public final class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int n1 = 500;
-        Integer n = scan.nextInt();
-        Integer m = scan.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
         MinPQ<CubeSum> pq = new MinPQ<CubeSum>();
-        for (int k = 1; k <= n; k++) {
-            pq.insert(new CubeSum(k, k));
+        for (int i = 1; i <= 550; i++) {
+            pq.insert(new CubeSum(i, i));
         }
+        // int i = 0;
         CubeSum prev = new CubeSum(0, 0);
         long sum = 0;
-        for (int i = 0; i < 500; i++) {
-            int a = 0;
-            while (!pq.isEmpty()) {
-                CubeSum c = pq.delMin();
-                if (prev.compareTo(c) == 0) {
-                    a++;
-                    if (a == m) {
-                        sum = c.getsum();
-                        break;
-                    }
-                } else {
-                    prev = c;
-                    a = 1;
-                }
-                if (c.j < 500) {
-                    pq.insert(new CubeSum(c.i, c.j + 1));
+        // for (k < n; k++) {
+        int p = 1;
+        int k = 0;
+        while (!pq.isEmpty()) {
+            CubeSum c = pq.delMin();
+            if (prev.getsum() == c.getsum()) {
+                p++;
+                if (p == m)
+                {
+                    sum = c.getsum();
+
+                    if (++k == n) break;
                 }
             }
+            else {
+                p = 1;
+            }
+            prev = c;
+            if (c.j < 550)
+                pq.insert(new CubeSum(c.i, c.j + 1));
+            // }
         }
         System.out.println(sum);
+
     }
 }

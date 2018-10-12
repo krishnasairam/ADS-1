@@ -19,8 +19,11 @@ Starting audit...
 [ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:22:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:25:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:28:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:49:18: '500' is a magic number. [MagicNumber]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:58:29: '500' is a magic number. [MagicNumber]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:72:27: '500' is a magic number. [MagicNumber]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:52:30: '550' is a magic number. [MagicNumber]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:66:17: '{' at column 17 should be on the previous line. [LeftCurly]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:69: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:71:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:76: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m17\TaxiCabNumbers\Solution.java:76:23: '550' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 23 errors.
+Checkstyle ends with 26 errors.
