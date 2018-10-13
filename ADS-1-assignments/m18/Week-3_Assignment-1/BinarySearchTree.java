@@ -144,18 +144,17 @@ class Stock {
         String s = stockname + " " + Double.toString(stockvalue);
         return s;
     }
-    public void print(Stock[] list) {
-        Stock v = new Stock();
-        for (Stock s : list) {
-            s.insertAtMax(s);
-            s.insertAtMin(s);
+    public Stock[] minarr() {
+        for (int i = 0; i < 5; i++) {
+            minarray[i] = delMin();
         }
-        for (int i = 0; i > 5; i++) {
-         System.out.println(delMax());
+        return minarray;
+    }
+    public Stock[] maxarr() {
+        for (int i = 0; i < 5; i++) {
+            maxarray[i] = delMax();
         }
-        for (int i = 0; i > 5; i++) {
-            System.out.println(delMin());
-        }
+        return maxarray;
     }
 }
 /**
@@ -267,4 +266,5 @@ public class BinarySearchTree {
         }
         return x.frequency;
     }
+
 }

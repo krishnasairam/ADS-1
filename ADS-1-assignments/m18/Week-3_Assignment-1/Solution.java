@@ -20,7 +20,6 @@ final class Solution {
         int n = sc.nextInt();
         int m = 6;
         sc.nextLine();
-        Stock s = new Stock();
         Stock[] list = new Stock[n];
         int i = 0;
         while (m > 0) {
@@ -31,7 +30,10 @@ final class Solution {
                 list[i++] = new Stock(tokens[0], Double.parseDouble(tokens[1]));
                 a--;
             }
-            s.print(list);
+            for (Stock s : list) {
+                s.insertAtMax(s);
+                s.insertAtMin(s);
+            }
             System.out.println();
             m--;
         }
