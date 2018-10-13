@@ -140,6 +140,10 @@ class Stock {
             return 0;
         }
     }
+    public String toString() {
+        String s = stockname + "   " + Double.toString(stockvalue);
+        return s;
+    }
     public void print(Stock[] list) {
         for (Stock s : list) {
             System.out.println(s);

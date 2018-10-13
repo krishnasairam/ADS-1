@@ -25,7 +25,6 @@ public class MaxPQ<Key> {
     public MaxPQ() {
         this(1);
     }
-
     /**
      * Returns true if this priority queue is empty.
      *
