@@ -151,12 +151,10 @@ class Stock {
             s.insertAtMin(s);
         }
         for (int i = 0; i > 5; i++) {
-            System.out.println(v.getMax());
-            System.out.println(v.delMax());
+         System.out.println(delMax());
         }
         for (int i = 0; i > 5; i++) {
-            System.out.println(v.getMin());
-            System.out.println(v.delMin());
+            System.out.println(delMin());
         }
     }
 }
