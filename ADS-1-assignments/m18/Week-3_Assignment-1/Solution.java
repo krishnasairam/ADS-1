@@ -22,7 +22,7 @@ final class Solution {
         sc.nextLine();
         Stock s = new Stock();
         Stock[] list = new Stock[n];
-        int i = 1;
+        int i = 0;
         while (m > 0) {
             while (n > 0) {
                 String[] tokens = sc.nextLine().split(",");
