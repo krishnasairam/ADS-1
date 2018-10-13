@@ -73,6 +73,7 @@ Tasty Bite Eat 0.23
 WABCO India 0.33
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
+	at Stock.insertAtMax(BinarySearchTree.java:88)
 	at Stock.print(BinarySearchTree.java:145)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
@@ -151,6 +152,7 @@ Vinati Organics 1.03
 Chola Inv Fin 1.47
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
+	at Stock.insertAtMax(BinarySearchTree.java:88)
 	at Stock.print(BinarySearchTree.java:145)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
@@ -234,6 +236,7 @@ WABCO India 0.33
 3
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
+	at Stock.insertAtMax(BinarySearchTree.java:88)
 	at Stock.print(BinarySearchTree.java:145)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
@@ -317,6 +320,7 @@ Chola Inv Fin 1.47
 0
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
+	at Stock.insertAtMax(BinarySearchTree.java:88)
 	at Stock.print(BinarySearchTree.java:145)
 	at Solution.main(Solution.java:32)
 ----------------------------------------
@@ -415,6 +419,7 @@ TTK Prestige
 Tasty Bite Eat
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
+	at Stock.insertAtMax(BinarySearchTree.java:88)
 	at Stock.print(BinarySearchTree.java:145)
 	at Solution.main(Solution.java:32)
 ----------------------------------------

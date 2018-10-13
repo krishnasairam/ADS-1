@@ -16,7 +16,7 @@ public class MaxPQ<Key> {
      */
     public MaxPQ(final int initCapacity) {
         pq = (Key[]) new Object[initCapacity + 1];
-        n = 0;
+        n = 10;
     }
 
     /**
