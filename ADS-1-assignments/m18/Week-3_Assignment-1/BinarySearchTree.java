@@ -142,8 +142,10 @@ class Stock {
     }
     public void print(Stock[] list) {
         for (Stock s : list) {
-            insertAtMax(s);
-            insertAtMin(s);
+            min.insert(s);
+            max.insert(s);
+            // insertAtMax(s);
+            // insertAtMin(s);
         }
         for (int i = 0; i < 5; i++) {
             System.out.println(delMin());
