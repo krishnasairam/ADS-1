@@ -25,6 +25,7 @@ final class Solution {
         int i = 0;
         while (m > 0) {
             int a = n;
+            i = 0;
             while (a > 0) {
                 String[] tokens = sc.nextLine().split(",");
                 list[i++] = new Stock(tokens[0], Double.parseDouble(tokens[1]));
