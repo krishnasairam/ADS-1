@@ -18,7 +18,8 @@ final class Solution {
         Scanner sc = new Scanner(System.in);
         BinarySearchTree bst = new BinarySearchTree();
         int n = sc.nextInt();
-        int m = 6;
+        int b = 1 + 2;
+        int m = b + b;
         sc.nextLine();
         Stock[] list = new Stock[n];
         int i = 0;
