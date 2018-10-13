@@ -147,14 +147,16 @@ class Stock {
     public void print(Stock[] list) {
         Stock v = new Stock();
         for (Stock s : list) {
-            max.insert(s);
-            min.insert(s);
+            s.insertAtMax(s);
+            s.insertAtMin(s);
         }
         for (int i = 0; i > 5; i++) {
-            System.out.println(max.delMax());
+            System.out.println(v.getMax());
+            System.out.println(v.delMax());
         }
         for (int i = 0; i > 5; i++) {
-            System.out.println(min.delMin());
+            System.out.println(v.getMin());
+            System.out.println(v.delMin());
         }
     }
 }
