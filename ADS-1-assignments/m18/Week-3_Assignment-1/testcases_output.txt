@@ -197,10 +197,6 @@ HEG Ltd,1.61
 Oracle Fin,1.52
 ICRA,5.84
 Merck Ltd,3.83
-
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:42)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -341,10 +337,6 @@ NIIT Tech,0.21
 Chola Inv Fin,1.47
 Fine Organic Industries Ltd.,0.29
 Ceat,-1.23
-
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Unknown Source)
-	at Solution.main(Solution.java:42)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 

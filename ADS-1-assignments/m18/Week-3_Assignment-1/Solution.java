@@ -38,8 +38,7 @@ final class Solution {
         for (Stock t : list) {
             bst.put(t.getname(), t.getfrequency());
         }
-        int p = sc.nextInt();
-        sc.nextLine();
+        int p = Integer.parseInt(sc.nextLine());
         while (p > 0) {
             String[] methods = sc.nextLine().split(",");
             p--;
