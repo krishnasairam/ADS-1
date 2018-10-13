@@ -15,7 +15,7 @@ public class MinPQ<Key> {
      */
     public MinPQ(final int initCapacity) {
         pq = (Key[]) new Object[initCapacity + 1];
-        n = 10;
+        n = 0;
     }
 
     /**

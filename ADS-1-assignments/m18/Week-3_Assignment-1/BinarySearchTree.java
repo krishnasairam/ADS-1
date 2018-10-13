@@ -46,8 +46,8 @@ class Stock {
     Stock(final String n, final Double a) {
         this.stockname = n;
         this.stockvalue = a;
-        min = new MinPQ<Stock>();
-        max = new MaxPQ<Stock>();
+        min = new MinPQ<Stock>(10);
+        max = new MaxPQ<Stock>(10);
         frequency = 0;
         minarray = new Stock[5];
         maxarray = new Stock[5];
