@@ -73,8 +73,8 @@ Tasty Bite Eat 0.23
 WABCO India 0.33
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Stock.insertAtMax(BinarySearchTree.java:88)
-	at Stock.print(BinarySearchTree.java:149)
+	at Stock.delMin(BinarySearchTree.java:120)
+	at Stock.print(BinarySearchTree.java:153)
 	at Solution.main(Solution.java:34)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -152,8 +152,8 @@ Vinati Organics 1.03
 Chola Inv Fin 1.47
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Stock.insertAtMax(BinarySearchTree.java:88)
-	at Stock.print(BinarySearchTree.java:149)
+	at Stock.delMin(BinarySearchTree.java:120)
+	at Stock.print(BinarySearchTree.java:153)
 	at Solution.main(Solution.java:34)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -236,8 +236,8 @@ WABCO India 0.33
 3
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Stock.insertAtMax(BinarySearchTree.java:88)
-	at Stock.print(BinarySearchTree.java:149)
+	at Stock.delMin(BinarySearchTree.java:120)
+	at Stock.print(BinarySearchTree.java:153)
 	at Solution.main(Solution.java:34)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
@@ -320,8 +320,8 @@ Chola Inv Fin 1.47
 0
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Stock.insertAtMax(BinarySearchTree.java:88)
-	at Stock.print(BinarySearchTree.java:149)
+	at Stock.delMin(BinarySearchTree.java:120)
+	at Stock.print(BinarySearchTree.java:153)
 	at Solution.main(Solution.java:34)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
@@ -419,7 +419,7 @@ TTK Prestige
 Tasty Bite Eat
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Stock.insertAtMax(BinarySearchTree.java:88)
-	at Stock.print(BinarySearchTree.java:149)
+	at Stock.delMin(BinarySearchTree.java:120)
+	at Stock.print(BinarySearchTree.java:153)
 	at Solution.main(Solution.java:34)
 ----------------------------------------

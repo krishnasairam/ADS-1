@@ -46,8 +46,8 @@ class Stock {
     Stock(final String n, final Double a) {
         this.stockname = n;
         this.stockvalue = a;
-        min = new MinPQ<Stock>(10);
-        max = new MaxPQ<Stock>(10);
+        min = new MinPQ<Stock>();
+        max = new MaxPQ<Stock>();
         frequency = 0;
         minarray = new Stock[5];
         maxarray = new Stock[5];
@@ -141,13 +141,13 @@ class Stock {
         }
     }
     public String toString() {
-        String s = stockname + "," + Double.toString(stockvalue);
+        String s = stockname + " " + Double.toString(stockvalue);
         return s;
     }
     public void print(Stock[] list) {
         for (Stock s : list) {
-            insertAtMax(s);
-            insertAtMin(s);
+            s.insertAtMax(s);
+            s.insertAtMin(s);
         }
         for (int i = 0; i < 5; i++) {
             System.out.println(delMin());
