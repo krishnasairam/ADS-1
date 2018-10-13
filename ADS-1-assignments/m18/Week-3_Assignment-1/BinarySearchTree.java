@@ -141,7 +141,7 @@ class Stock {
         }
     }
     public String toString() {
-        String s = stockname + "   " + Double.toString(stockvalue);
+        String s = stockname + "," + Double.toString(stockvalue);
         return s;
     }
     public void print(Stock[] list) {

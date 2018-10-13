@@ -24,12 +24,14 @@ final class Solution {
         Stock[] list = new Stock[n];
         int i = 0;
         while (m > 0) {
-            while (n > 0) {
+            int a = n;
+            while (a > 0) {
                 String[] tokens = sc.nextLine().split(",");
                 list[i++] = new Stock(tokens[0], Double.parseDouble(tokens[1]));
-                n--;
+                a--;
             }
             s.print(list);
+            System.out.println();
             m--;
         }
         for (Stock t : list) {
