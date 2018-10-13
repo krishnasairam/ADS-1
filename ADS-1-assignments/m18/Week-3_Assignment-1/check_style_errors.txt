@@ -1,0 +1,4 @@
+Starting audit...
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m18\Week-3_Assignment-1\Solution.java:21:17: '6' is a magic number. [MagicNumber]
+Audit done.
+Checkstyle ends with 1 errors.
