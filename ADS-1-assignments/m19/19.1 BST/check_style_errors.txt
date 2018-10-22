@@ -1,0 +1,10 @@
+Starting audit...
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m19\19.1 BST\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m19\19.1 BST\Solution.java:25: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m19\19.1 BST\Solution.java:30: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m19\19.1 BST\Solution.java:40: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m19\19.1 BST\Solution.java:43: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m19\19.1 BST\Solution.java:44: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m19\19.1 BST\Solution.java:47: Line is longer than 80 characters (found 92). [LineLength]
+Audit done.
+Checkstyle ends with 7 errors.
