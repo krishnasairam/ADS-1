@@ -47,14 +47,14 @@ final class Solution {
                 System.out.println(bst.select(Integer.parseInt(tokens[1])));
                 break;
             case "deleteMax":
-                System.out.println(bst.max());
+                bst.deleteMax();
                 break;
             case "deleteMin":
-                System.out.println(bst.min());
+                bst.deleteMin();
                 break;
             case "delete":
-                System.out.println(bst.floor(new Book(tokens[1],
-                    tokens[2], Double.parseDouble(tokens[2 + 1]))));
+                bst.delete(new Book(tokens[1],
+                    tokens[2], Double.parseDouble(tokens[2 + 1])));
                 break;
             default:
                 break;
