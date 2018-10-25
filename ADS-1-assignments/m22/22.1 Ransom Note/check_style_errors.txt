@@ -1,4 +1,4 @@
 Starting audit...
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m22\22.1 Ransom Note\Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m22\22.1 Ransom Note\Solution.java:5: Class Solution should be declared as final. [FinalClass]
 Audit done.
 Checkstyle ends with 1 errors.
