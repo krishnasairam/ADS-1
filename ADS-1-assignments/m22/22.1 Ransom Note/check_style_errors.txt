@@ -1,10 +1,4 @@
 Starting audit...
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m22\22.1 Ransom Note\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m22\22.1 Ransom Note\Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m22\22.1 Ransom Note\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m22\22.1 Ransom Note\Solution.java:12: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m22\22.1 Ransom Note\Solution.java:17:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m22\22.1 Ransom Note\Solution.java:19: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m22\22.1 Ransom Note\Solution.java:31:30: '=' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 1 errors.
