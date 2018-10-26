@@ -34,8 +34,7 @@ public final class Solution {
             case "display":
                 try {
                     hash.display();
-                } catch (Exception e)
-                {
+                } catch (Exception e) {
                     System.out.println("{}");
                 }
                 break;

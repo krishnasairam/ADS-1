@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] C:\Users\krishna sairam\Downloads\sairam\ADS-1\ADS-1-assignments\m23\23.1 Hashing with Linear Probing\Solution.java:38:17: '{' at column 17 should be on the previous line. [LeftCurly]
 Audit done.
-Checkstyle ends with 1 errors.
