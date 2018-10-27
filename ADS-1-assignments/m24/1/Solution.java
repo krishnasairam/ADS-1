@@ -20,7 +20,8 @@ public final class Solution {
             = new LinearProbingHashST();
         while (n > 0) {
             String[] tokens = scan.nextLine().split(",");
-            hash.put(Integer.parseInt(tokens[0]), new Studentdetails(tokens[1], Double.parseDouble((tokens[2]))));
+            hash.put(Integer.parseInt(tokens[0]),
+                new Studentdetails(tokens[1], Double.parseDouble((tokens[2]))));
             n--;
         }
         int m = Integer.parseInt(scan.nextLine());
