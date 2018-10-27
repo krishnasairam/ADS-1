@@ -128,7 +128,7 @@ Meili Cady
 Your Output: 
 Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to [LStudentdetails;
 	at LinearProbingHashST.less(LinearProbingHashST.java:247)
-	at Solution.main(Solution.java:41)
+	at Solution.main(Solution.java:40)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 

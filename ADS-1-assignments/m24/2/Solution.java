@@ -28,7 +28,6 @@ public final class Solution {
         while (m > 0) {
             String[] token = scan.nextLine().split(" ");
             if (token[0].equals("BE")) {
-                System.out.println(hash.between(Double.parseDouble(token[1]), Double.parseDouble(token[2])));
                 Studentdetails[] s1 = (Studentdetails[]) hash.between(Double.parseDouble(token[1]), Double.parseDouble(token[2]));
                 for (Studentdetails i : s1) {
                     if (i != null) {
