@@ -13,13 +13,12 @@ class Studentdetails {
     /**
      * Constructs the object.
      *
-     * @param      roll   The roll
      * @param      name   The name
      * @param      marks  The marks
      */
-    Studentdetails(final String name, final double marks) {
-        this.name = name;
-        this.marks = marks;
+    Studentdetails(final String name1, final double marks1) {
+        this.name = name1;
+        this.marks = marks1;
 
     }
     /**
