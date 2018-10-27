@@ -9,16 +9,16 @@ class Studentdetails {
     /**
      *  marks.
      */
-    private double marks;
+    private int roll;
     /**
      * Constructs the object.
      *
      * @param      name1   The name
      * @param      marks1  The marks
      */
-    Studentdetails(final String name1, final double marks1) {
+    Studentdetails(final String name1, final int roll1) {
         this.name = name1;
-        this.marks = marks1;
+        this.roll = roll1;
 
     }
     /**
@@ -42,7 +42,7 @@ class Studentdetails {
      *
      * @return     s3marks.
      */
-    public double marks() {
-        return this.marks;
+    public int roll() {
+        return this.roll;
     }
 }
