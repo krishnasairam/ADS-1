@@ -28,7 +28,7 @@ public final class Solution {
         while (m > 0) {
             String[] token = scan.nextLine().split(" ");
             if (token[0].equals("BE")) {
-                Studentdetails[] s1 = hash.between(Double.parseDouble(token[1]), Double.parseDouble(token[2]));
+                Studentdetails[] s1 = (Studentdetails[]) hash.between(Double.parseDouble(token[1]), Double.parseDouble(token[2]));
                 for (Studentdetails i : s1) {
                     if (i != null) {
                         System.out.println(i.name());
@@ -37,7 +37,7 @@ public final class Solution {
                     }
                 }
             } else if (token[0].equals("LE")) {
-                Studentdetails[] s2 = hash.less(Double.parseDouble(token[1]));
+                Studentdetails[] s2 = (Studentdetails[]) hash.less(Double.parseDouble(token[1]));
                 for (Studentdetails j : s2) {
                     if (j != null) {
                         System.out.println(j.name());
@@ -46,7 +46,7 @@ public final class Solution {
                     }
                 }
             } else if (token[0].equals("GE")) {
-                Studentdetails[] s3 = hash.high(Double.parseDouble(token[1]));
+                Studentdetails[] s3 = (Studentdetails[]) hash.high(Double.parseDouble(token[1]));
                 for (Studentdetails k : s3) {
                     if (k != null) {
                         System.out.println(k.name());

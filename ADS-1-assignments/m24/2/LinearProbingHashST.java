@@ -208,7 +208,7 @@ public class LinearProbingHashST<Key, Value> {
      * @return     { description_of_the_return_value }
      */
     public Value[] between(Double n1, Double n2) {
-        Value[] val = (Value[]) new Object[m];
+        Value[] val = (Value[]) new Object[vals.length];
         int j = 0;
         for (int i = 0; i < keys.length - 1; i++) {
             if (keys[i] != null && (Double)keys[i] >= n1 && (Double)keys[i] <= n2) {
@@ -226,7 +226,7 @@ public class LinearProbingHashST<Key, Value> {
      * @return     { description_of_the_return_value }
      */
     public Value[] high(Double n1) {
-        Value[] val = (Value[]) new Object[m];
+        Value[] val = (Value[]) new Object[vals.length];
         int j = 0;
         for (int i = 0; i < keys.length - 1; i++) {
             if (keys[i] != null && (Double)keys[i] >= n1) {
