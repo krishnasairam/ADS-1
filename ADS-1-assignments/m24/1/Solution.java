@@ -30,14 +30,16 @@ public final class Solution {
             if (token[0].equals("get")) {
                 if (Integer.parseInt(token[2]) == 1) {
                     try {
-                        System.out.println(hash.get(Integer.parseInt(token[1])).name());
+                        System.out.println(hash.get(Integer.parseInt(token[1]))
+                            .name());
                     } catch (Exception e) {
                         System.out.println("Student doesn't exists...");
                     }
 
                 } else if (Integer.parseInt(token[2]) == 2) {
                     try {
-                        System.out.println(hash.get(Integer.parseInt(token[1])).marks());
+                        System.out.println(hash.get(Integer.parseInt(token[1])).
+                            marks());
                     } catch (Exception e) {
                         System.out.println("Student doesn't exists...");
                     }
