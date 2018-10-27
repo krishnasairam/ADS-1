@@ -5,8 +5,7 @@ Rivest
 Dan
 Abegg
 Your Output: 
-Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to [LStudentdetails;
-	at Solution.main(Solution.java:31)
+
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -57,7 +56,7 @@ Abegg
 Brian Caffrey
 Your Output: 
 Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to [LStudentdetails;
-	at Solution.main(Solution.java:31)
+	at Solution.main(Solution.java:50)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -125,7 +124,7 @@ Megon
 Meili Cady
 Your Output: 
 Exception in thread "main" java.lang.ClassCastException: java.base/[Ljava.lang.Object; cannot be cast to [LStudentdetails;
-	at Solution.main(Solution.java:40)
+	at Solution.main(Solution.java:41)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
