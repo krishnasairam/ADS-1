@@ -13,8 +13,8 @@ class Studentdetails {
     /**
      * Constructs the object.
      *
-     * @param      name   The name
-     * @param      marks  The marks
+     * @param      name1   The name
+     * @param      marks1  The marks
      */
     Studentdetails(final String name1, final double marks1) {
         this.name = name1;
