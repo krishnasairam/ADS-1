@@ -1,9 +1,10 @@
 import java.util.Scanner;
+import java.util.Arrays;
 /**
  * Class for solution.
  */
 public final class Solution {
-    /**
+    /*
      * Constructs the object.
      */
     private Solution() {
@@ -28,32 +29,19 @@ public final class Solution {
         while (m > 0) {
             String[] token = scan.nextLine().split(" ");
             if (token[0].equals("BE")) {
-                hash.between(Double.parseDouble(token[1]), Double.parseDouble(token[2]));
-                /**for (Studentdetails i : s1) {
-                    if (i != null) {
-                        System.out.println(i.name());
-                    } else {
+                String [] s1 = hash.between(Double.parseDouble(token[1]), Double.parseDouble(token[2]));
+                Arrays.sort(s1);
+                for (String i : s1) {
+                    if (i.equals("null")) {
                         break;
+                    } else {
+                        System.out.println(i);
                     }
-                }*/
+                }
             } if (token[0].equals("LE")) {
-                hash.less(Double.parseDouble(token[1]));
-                /**for (Studentdetails j : s2) {
-                    if (j != null) {
-                        System.out.println(j.name());
-                    } else {
-                        break;
-                    }
-                }*/
+                String [] s2 = hash.less(Double.parseDouble(token[1]));
             } else if (token[0].equals("GE")) {
-                hash.high(Double.parseDouble(token[1]));
-                /**for (Studentdetails k : s3) {
-                    if (k != null) {
-                        System.out.println(k.name());
-                    } else {
-                        break;
-                    }
-                }*/
+                String [] s3 = hash.high(Double.parseDouble(token[1]));
             }
             m--;
         }

@@ -5,10 +5,11 @@ Rivest
 Dan
 Abegg
 Your Output: 
-Dan
-Clark
-Rivest
-Abegg
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.util.ComparableTimSort.binarySort(Unknown Source)
+	at java.base/java.util.ComparableTimSort.sort(Unknown Source)
+	at java.base/java.util.Arrays.sort(Unknown Source)
+	at Solution.main(Solution.java:33)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -58,49 +59,11 @@ Tim Cahill
 Abegg
 Brian Caffrey
 Your Output: 
-Alice
-Bob
-Knuth
-Wayne
-Peter
-Adams
-Rivest
-Yassi
-Access
-Maria Cabezas
-David Cabot
-Sasha Cagen
-Rhian Cahill
-Rachel Caine
-Charles
-Clark
-Biba Caggiano
-Jonathan Cainer
-Jeannette Caines
-Megon
-Douglas
-Simon
-Daniel
-Fred
-Hank
-Abegg
-Keith
-Meg Cabot
-Sally Cabot
-Dan Caddy
-Neil Cadigan
-Meili Cady
-Steve Cafferty
-Tim Cain
-Tim Cahill
-Greig Caigou
-George Cain
-James Cain
-John
-Tony
-Deborah Cadbury
-Brian Caffrey
-Rovina Cai
+Exception in thread "main" java.lang.NullPointerException
+	at java.base/java.util.ComparableTimSort.countRunAndMakeAscending(Unknown Source)
+	at java.base/java.util.ComparableTimSort.sort(Unknown Source)
+	at java.base/java.util.Arrays.sort(Unknown Source)
+	at Solution.main(Solution.java:33)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -167,65 +130,7 @@ Neil Cadigan
 Megon
 Meili Cady
 Your Output: 
-Megon
-Douglas
-Simon
-Daniel
-Fred
-Hank
-Abegg
-Keith
-Meg Cabot
-Sally Cabot
-Dan Caddy
-Neil Cadigan
-Meili Cady
-Steve Cafferty
-Tim Cain
-Tim Cahill
-Greig Caigou
-George Cain
-James Cain
-John
-Tony
-Deborah Cadbury
-Brian Caffrey
-Rovina Cai
-Megon
-Douglas
-Simon
-Daniel
-Fred
-Hank
-Rivest
-Abegg
-Keith
-Meg Cabot
-Sally Cabot
-Sasha Cagen
-Dan Caddy
-Neil Cadigan
-Meili Cady
-Steve Cafferty
-Tim Cain
-Rhian Cahill
-Tim Cahill
-Greig Caigou
-George Cain
-James Cain
-John
-Tony
-Clark
-Deborah Cadbury
-Brian Caffrey
-Rovina Cai
-Megon
-Hank
-Dan Caddy
-Neil Cadigan
-Meili Cady
-Steve Cafferty
-Deborah Cadbury
+
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -946,5 +851,5 @@ Vicky Hales-Dutton
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -3
 	at LinearProbingHashST.put(LinearProbingHashST.java:100)
-	at Solution.main(Solution.java:23)
+	at Solution.main(Solution.java:24)
 ----------------------------------------
