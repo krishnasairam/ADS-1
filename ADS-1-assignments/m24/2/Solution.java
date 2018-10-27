@@ -27,7 +27,7 @@ public final class Solution {
         int m = Integer.parseInt(scan.nextLine());
         while (m > 0) {
             String[] token = scan.nextLine().split(" ");
-            /*if (token[0].equals("BE")) {
+            if (token[0].equals("BE")) {
                 Studentdetails[] s1 = (Studentdetails[]) hash.between(Double.parseDouble(token[1]), Double.parseDouble(token[2]));
                 for (Studentdetails i : s1) {
                     if (i != null) {
@@ -36,8 +36,7 @@ public final class Solution {
                         break;
                     }
                 }
-            } */
-            if (token[0].equals("LE")) {
+            } if (token[0].equals("LE")) {
                 Studentdetails[] s2 = (Studentdetails[]) hash.less(Double.parseDouble(token[1]));
                 for (Studentdetails j : s2) {
                     if (j != null) {
