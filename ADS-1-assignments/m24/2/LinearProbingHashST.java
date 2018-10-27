@@ -207,16 +207,12 @@ public class LinearProbingHashST<Key, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    public Studentdetails[] between(Double n1, Double n2) {
-        Studentdetails[] val = (Studentdetails[]) new Object[vals.length];
-        int j = 0;
+    public void between(Double n1, Double n2) {
         for (int i = 0; i < keys.length - 1; i++) {
             if (keys[i] != null && (Double)keys[i] >= n1 && (Double)keys[i] <= n2) {
-                val[j] = (Studentdetails) vals[i];
-                j++;
+                System.out.println(((Studentdetails)vals[i]).name());
             }
         }
-        return val;
     }
     /**
      * high.
@@ -225,16 +221,12 @@ public class LinearProbingHashST<Key, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    public Studentdetails[] high(Double n1) {
-        Studentdetails[] val = (Studentdetails[]) new Object[vals.length];
-        int j = 0;
+    public void high(Double n1) {
         for (int i = 0; i < keys.length - 1; i++) {
             if (keys[i] != null && (Double)keys[i] >= n1) {
-                val[j] = (Studentdetails) vals[i];
-                j++;
+                System.out.println(((Studentdetails) vals[i]).name());
             }
         }
-        return val;
     }
     /**
      * less.
@@ -243,15 +235,11 @@ public class LinearProbingHashST<Key, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    public Studentdetails[] less(Double n1) {
-        Studentdetails[] val = (Studentdetails[]) new Object[vals.length];
-        int j = 0;
+    public void less(Double n1) {
         for (int i = 0; i < keys.length - 1; i++) {
             if (keys[i] != null && (Double)keys[i] <= n1) {
-                val[j] = (Studentdetails) vals[i];
-                j++;
+                System.out.println(((Studentdetails)vals[i]).name());
             }
         }
-        return val;
     }
 }
