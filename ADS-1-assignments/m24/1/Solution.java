@@ -28,9 +28,18 @@ public final class Solution {
             String[] token = scan.nextLine().split(" ");
             if (token[0].equals("get")) {
                 if (Integer.parseInt(token[2]) == 1) {
-                    System.out.println(hash.get(Integer.parseInt(token[1])).name());
+                    try {
+                        System.out.println(hash.get(Integer.parseInt(token[1])).name());
+                    } catch (Exception e) {
+                        System.out.println("Student doesn't exists...");
+                    }
+
                 } else if (Integer.parseInt(token[2]) == 2) {
-                    System.out.println(hash.get(Integer.parseInt(token[1])).marks());
+                    try {
+                        System.out.println(hash.get(Integer.parseInt(token[1])).marks());
+                    } catch (Exception e) {
+                        System.out.println("Student doesn't exists...");
+                    }
                 }
             }
             m--;
