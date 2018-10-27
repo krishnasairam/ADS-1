@@ -17,7 +17,7 @@ public final class Solution {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
         LinearProbingHashST<Double, Studentdetails> hash
-            = new LinearProbingHashST();
+            = new LinearProbingHashST<Double, Studentdetails>();
         while (n > 0) {
             String[] tokens = scan.nextLine().split(",");
             hash.put(Double.parseDouble((tokens[2])),
