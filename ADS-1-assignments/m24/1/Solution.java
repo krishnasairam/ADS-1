@@ -26,8 +26,7 @@ public final class Solution {
         int m = Integer.parseInt(scan.nextLine());
         while (m > 0) {
             String[] token = scan.nextLine().split(" ");
-            System.out.println(token[0]);
-            if (token[0] == "get") {
+            if (token[0].equals("get")) {
                 if (Integer.parseInt(token[2]) == 1) {
                     System.out.println(hash.get(Integer.parseInt(token[1])).name());
                 } else if (Integer.parseInt(token[2]) == 2) {
